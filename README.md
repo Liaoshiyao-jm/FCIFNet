@@ -53,11 +53,5 @@ python train.py --dataset Trento --data-root DATA --output runs/trento
 
 Replace `Trento` with `Houston`, `MUUFL`, or `Augsburg` when needed. There is no
 split-method option. Use `--device cpu` to force CPU training or `--device
-cuda` to force CUDA. Training progress is printed every 10 epochs. The final
-output reports the best result.
+cuda` to force CUDA. 
 
-## Implementation
-
-The HSI branch uses spectral-spatial 3D convolution with input layout
-`[batch, 1, bands, height, width]`. Phase fusion uses a weighted circular mean
-implemented with sine, cosine, and `atan2`.
