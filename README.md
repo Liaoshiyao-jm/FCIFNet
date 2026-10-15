@@ -48,4 +48,4 @@ DATA/
 python models/train.py --dataset Trento --data-root DATA --output runs/trento
 ```
 
-Replace `Trento` with `Houston`, `MUUFL`, or `Augsburg` as needed. The default run uses 200 epochs and seed 0. Houston, MUUFL, and Augsburg use their supplied training and test label maps. Trento has only one ground-truth map, so the loader selects the paper's per-class training counts with seed 0 and uses the remaining labeled pixels for testing. The loader checks the per-class counts for every dataset before training. There is no alternative split option. Training writes the best checkpoint, epoch history, and final metrics to the output directory without printing each epoch.
+Replace `Trento` with `Houston`, `MUUFL`, or `Augsburg` as needed. 
